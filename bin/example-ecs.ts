@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { EcsExampleStack } from '../lib/ecs-example-stack';
+import { ExampleFargateStack } from '../lib/example-ecs-stack';
 
 const app = new cdk.App();
-new EcsExampleStack(app, 'EcsExampleStack', {
+new ExampleFargateStack(app, 'ExampleFargateStack', {
+  env: { region: 'us-west-2' },
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */

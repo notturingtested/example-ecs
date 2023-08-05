@@ -1,8 +1,8 @@
 {
-  "name": "ecs-example",
+  "name": "example-ecs",
   "version": "0.1.0",
   "bin": {
-    "ecs-example": "bin/ecs-example.js"
+    "example-ecs": "bin/example-ecs.js"
   },
   "scripts": {
     "build": "tsc",
